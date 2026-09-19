@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Abhiram Koroth | DevSecOps &amp; SRE</title>
+  <meta name="description" content="Abhiram Koroth, DevSecOps / SRE / Platform Engineer with 9.5+ years of experience. Terraform, AWS, Kubernetes, Docker, Ansible and Git projects.">
+  <link rel="preload" href="fonts/HackNerdFont-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/HackNerdFont-Bold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230d1117'/%3E%3Ctext x='16' y='22' font-size='16' text-anchor='middle' fill='%233fb950' font-family='monospace'%3E%26gt;_%3C/text%3E%3C/svg%3E">
+</head>
+<body>
+
+<!-- GitHub mark, reused everywhere via <use> -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="gh" viewBox="0 0 16 16">
+    <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0016 8c0-4.42-3.58-8-8-8z"/>
+  </symbol>
+</svg>
+
+<header class="topbar">
+  <a class="brand" href="#top">abhiram@portfolio:~$</a>
+  <nav aria-label="Sections">
+    <a href="#tech">./tech</a>
+    <a href="#projects">./projects</a>
+    <a href="#about">./about</a>
+    <a href="#contact">./contact</a>
+  </nav>
+  <div class="topbar-actions">
+    <a class="icon-btn" href="https://github.com/korothabhiram" target="_blank" rel="noopener" aria-label="GitHub profile" title="GitHub profile">
+      <svg class="gh"><use href="#gh"/></svg>
+    </a>
+    <button class="icon-btn" id="theme" type="button" aria-label="Toggle light/dark theme" title="Toggle theme">◐</button>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="term">
+      <div class="term-bar"><span class="term-title">abhiram@portfolio: ~</span></div>
+      <div class="term-body">
+        <p class="cmd"><span class="ps1">abhiram@portfolio:~$</span> whoami</p>
+        <h1>Abhiram Koroth</h1>
+        <p class="role">DevSecOps · SRE · Cloud · Platform Engineering</p>
+        <p class="tagline">I keep production services <b class="g">reliable</b>, <b class="b">secure</b> and <b class="v">automated</b>.</p>
+
+        <p class="cmd"><span class="ps1">abhiram@portfolio:~$</span> cat about.txt</p>
+        <p class="lead">
+          9.5+ years building, deploying and running software in the cloud. I work with AWS, automate
+          infrastructure, set up pipelines that ship code safely, and fix things fast when production breaks.
+          Currently a Platform Engineer at Modulr. Outside work, I build passion projects that show how I
+          design, automate and secure real systems, all public on GitHub.
+        </p>
+
+        <p class="cmd"><span class="ps1">abhiram@portfolio:~$</span> ls links/</p>
+        <div class="cta">
+          <a class="btn primary" href="https://github.com/korothabhiram" target="_blank" rel="noopener">
+            <svg class="gh"><use href="#gh"/></svg> github.com/korothabhiram
+          </a>
+          <a class="btn" href="#projects">./projects →</a>
+          <a class="btn" href="Abhiram_9_Years_DevOps_SRE.pdf" download="Abhiram_9_Years_DevOps_SRE.pdf">Resume ↓</a>
+        </div>
+
+        <p class="cmd"><span class="ps1">abhiram@portfolio:~$</span> echo $STACK</p>
+        <ul class="chips" aria-label="Tech stack">
+          <li>AWS</li><li>Terraform</li><li>Kubernetes</li><li>Docker</li><li>Ansible</li><li>Jenkins</li><li>GitLab CI</li><li>Datadog</li><li>Python</li>
+        </ul>
+
+        <div class="live">
+          <div id="live-out" aria-live="polite"></div>
+          <label class="prompt-line">
+            <span class="ps1">abhiram@portfolio:~$</span> <span class="typed" id="typed"></span><span class="cursor" aria-hidden="true"></span>
+            <input id="live-in" class="live-input" type="text" aria-label="Terminal prompt. Type help to list commands." autocomplete="off" autocapitalize="off" autocorrect="off" spellcheck="false">
+          </label>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TECHNOLOGIES -->
+  <section id="tech" class="reveal">
+    <header class="sec-head">
+      <p class="cmd"><span class="ps1">abhiram@portfolio:~$</span> ls ~/technologies</p>
+      <h2>The toolbox</h2>
+      <p class="sub">One repo per technology. Click a tile to open it on GitHub.</p>
+    </header>
+
+    <ul class="toolbox">
+      <li><a class="tool" style="--accent:#a371f7" href="https://github.com/korothabhiram/Terraform" target="_blank" rel="noopener" aria-label="Terraform repo on GitHub" title="Terraform repo on GitHub"><span class="name">Terraform</span><svg class="gh"><use href="#gh"/></svg></a></li>
+      <li><a class="tool" style="--accent:#f0883e" href="https://github.com/korothabhiram/AWS" target="_blank" rel="noopener" aria-label="AWS repo on GitHub" title="AWS repo on GitHub"><span class="name">AWS</span><svg class="gh"><use href="#gh"/></svg></a></li>
+      <li><a class="tool" style="--accent:#58a6ff" href="https://github.com/korothabhiram/Kubernetes" target="_blank" rel="noopener" aria-label="Kubernetes repo on GitHub" title="Kubernetes repo on GitHub"><span class="name">Kubernetes</span><svg class="gh"><use href="#gh"/></svg></a></li>
+      <li><a class="tool" style="--accent:#2f81f7" href="https://github.com/korothabhiram/Docker" target="_blank" rel="noopener" aria-label="Docker repo on GitHub" title="Docker repo on GitHub"><span class="name">Docker</span><svg class="gh"><use href="#gh"/></svg></a></li>
+      <li><a class="tool" style="--accent:#f85149" href="https://github.com/korothabhiram/Ansible" target="_blank" rel="noopener" aria-label="Ansible repo on GitHub" title="Ansible repo on GitHub"><span class="name">Ansible</span><svg class="gh"><use href="#gh"/></svg></a></li>
+      <li><a class="tool" style="--accent:#3fb950" href="https://github.com/korothabhiram/Git" target="_blank" rel="noopener" aria-label="Git repo on GitHub" title="Git repo on GitHub"><span class="name">Git</span><svg class="gh"><use href="#gh"/></svg></a></li>
+    </ul>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="reveal">
+    <header class="sec-head">
+      <p class="cmd"><span class="ps1">abhiram@portfolio:~$</span> ls ~/projects</p>
+      <h2>Things I've built</h2>
+      <p class="sub">One small app, deployed three ways: on my own machine, on a single AWS server, and as a full production-style setup.</p>
+    </header>
+
+    <div class="proj-grid">
+
+      <article class="proj featured">
+        <div class="tech-top">
+          <h3>crud-app-three-tier</h3>
+          <a class="gh-link" href="https://github.com/korothabhiram/Terraform/tree/main/crud-app-three-tier" target="_blank" rel="noopener" aria-label="crud-app-three-tier on GitHub" title="View on GitHub"><svg class="gh"><use href="#gh"/></svg></a>
+        </div>
+        <p>A production-style AWS setup for a small web app: separate web, application and database layers across two data centres, built entirely from reusable Terraform modules and configured automatically by Ansible.</p>
+        <pre class="flow" aria-label="Architecture">Internet → DNS → Public load balancer (HTTPS)
+  → Web servers (nginx) → Internal load balancer
+  → App servers (Apache + PHP) → MySQL database</pre>
+        <ul class="meta"><li>Terraform</li><li>AWS</li><li>Ansible</li><li>Highly available</li><li>No open SSH</li></ul>
+      </article>
+
+      <article class="proj">
+        <div class="tech-top">
+          <h3>basic-crud-app-tf</h3>
+          <a class="gh-link" href="https://github.com/korothabhiram/Terraform/tree/main/basic-crud-app-tf" target="_blank" rel="noopener" aria-label="basic-crud-app-tf on GitHub" title="View on GitHub"><svg class="gh"><use href="#gh"/></svg></a>
+        </div>
+        <p>The same app on a single AWS server, with a managed MySQL database and file storage. Database passwords live in AWS's secure store, not in code, and there is no SSH access.</p>
+        <ul class="meta"><li>Terraform</li><li>Ansible</li><li>EC2</li><li>RDS</li></ul>
+      </article>
+
+      <article class="proj">
+        <div class="tech-top">
+          <h3>crud-app-demo</h3>
+          <a class="gh-link" href="https://github.com/korothabhiram/Docker/tree/main/crud-app-demo" target="_blank" rel="noopener" aria-label="crud-app-demo on GitHub" title="View on GitHub"><svg class="gh"><use href="#gh"/></svg></a>
+        </div>
+        <p>The starting point: a small PHP and MySQL app where you can create, view, edit and delete records, packaged in Docker to run locally.</p>
+        <ul class="meta"><li>Docker</li><li>PHP</li><li>MySQL</li></ul>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ABOUT + RESUME -->
+  <section id="about" class="reveal">
+    <header class="sec-head">
+      <p class="cmd"><span class="ps1">abhiram@portfolio:~$</span> cat ~/about/resume.md</p>
+      <h2>About &amp; resume</h2>
+    </header>
+
+    <div class="about-grid">
+      <div class="bio">
+        <p>
+          I'm a DevSecOps / SRE engineer with 9.5+ years of keeping critical services running,
+          from build and release to production troubleshooting. I like infrastructure that is repeatable,
+          reviewed and tracked in version control, and I use AI-driven automation to remove repetitive engineering work.
+        </p>
+        <p>The repos on this page are passion projects I build in my own time, to keep learning and to show how I approach real infrastructure.</p>
+        <a class="btn" href="Abhiram_9_Years_DevOps_SRE.pdf" download="Abhiram_9_Years_DevOps_SRE.pdf">Resume ↓</a>
+      </div>
+
+      <article class="resume" aria-label="Resume">
+        <div class="term-bar"><span class="term-title">resume.md — abhiram</span></div>
+        <div class="term-body">
+        <header>
+          <h3>Abhiram Koroth</h3>
+          <p>DevSecOps · SRE · Cloud · Platform Engineering</p>
+          <p class="contactline">abhiram1289@gmail.com · linkedin.com/in/abhiram-koroth · github.com/korothabhiram</p>
+        </header>
+
+        <h4>Professional summary</h4>
+        <p>DevSecOps/SRE engineer with 9.5+ years of experience delivering and supporting critical services across the application lifecycle. Strong background in AWS, CI/CD, Infrastructure as Code, Kubernetes, configuration management, observability, production troubleshooting and root-cause analysis. Experienced in designing and implementing technical systems and in applying AI-driven automation to repetitive engineering processes.</p>
+
+        <h4>Experience</h4>
+        <ol class="gitlog" aria-label="Work history, newest first">
+          <li>
+            <span class="date">Feb 2025 – Present</span>
+            <span class="what"><strong>Platform Engineer</strong> <span class="at">@ Modulr</span> <span class="ref">(HEAD -&gt; main)</span><span class="loc">Mumbai</span></span>
+          </li>
+          <li>
+            <span class="date">Oct 2024 – Jan 2025</span>
+            <span class="what"><strong>Specialist Platforms</strong> <span class="at">@ Blenheim Chalcot</span><span class="loc">Mumbai</span></span>
+          </li>
+          <li>
+            <span class="date">Jul 2023 – Sep 2024</span>
+            <span class="what"><strong>Site Reliability Engineer</strong> <span class="at">@ Pearson</span><span class="loc">Bengaluru</span></span>
+          </li>
+          <li>
+            <span class="date">Jun 2021 – Jun 2023</span>
+            <span class="what"><strong>Cloud DevOps Engineer</strong> <span class="at">@ Trellix</span><span class="loc">Bengaluru</span></span>
+          </li>
+          <li>
+            <span class="date">Mar 2017 – May 2021</span>
+            <span class="what"><strong>Tech Lead</strong> <span class="at">@ Cognizant</span><span class="loc">Bengaluru</span></span>
+          </li>
+        </ol>
+
+        <h4>Selected experience</h4>
+        <ul>
+          <li>Supported the complete application lifecycle across Development, Staging and Production: build, release, deployment, configuration and operations.</li>
+          <li>AWS: compute, networking, storage, databases, IAM, security and highly available infrastructure.</li>
+          <li>Scalable Infrastructure as Code with <strong>Terraform</strong>, focused on repeatability and operational consistency.</li>
+          <li>CI/CD pipelines in <strong>Jenkins</strong> and <strong>GitLab CI/CD</strong>: builds, artifacts, testing and deployments.</li>
+          <li><strong>Docker</strong> and <strong>Kubernetes</strong>: containerisation, image management, cluster operations and production workloads.</li>
+          <li>Configuration management and deployment automation with <strong>Ansible</strong>; Python and Bash for operational automation.</li>
+          <li>GitHub, GitLab and Bitbucket; artifact and container registries including Nexus, JFrog and Amazon ECR.</li>
+          <li>Production and non-production troubleshooting: deployment failures, application and infrastructure issues, patches, feature releases and version upgrades.</li>
+          <li>Observability with Datadog, Grafana, ELK, Splunk and New Relic to investigate incidents and improve reliability.</li>
+          <li>Security and code quality in delivery workflows with SonarQube, Snyk, Wiz and Tenable.</li>
+          <li>Incident, change, problem and major-incident management, including root-cause analysis and cross-team coordination.</li>
+        </ul>
+
+        <h4>Core skills</h4>
+        <p class="skills">
+          <span>CI/CD</span><span>Infrastructure as Code</span><span>Container orchestration</span>
+          <span>Solution architecture</span><span>Configuration management</span><span>AWS / Cloud</span>
+          <span>Kubernetes / Docker</span><span>Observability</span><span>DevSecOps</span>
+          <span>Incident management</span>
+        </p>
+
+        <h4>Certifications</h4>
+        <ul>
+          <li>AWS Certified Solutions Architect – Associate</li>
+          <li>HashiCorp Certified: Terraform Associate</li>
+          <li>IELTS – International English Language Testing System</li>
+        </ul>
+
+        <h4>Honors &amp; awards</h4>
+        <ul>
+          <li>Cognizant Cheers</li>
+          <li>Trellix Hackathon Runner Up</li>
+          <li>Modulr Way Awards</li>
+        </ul>
+
+        <h4>Education</h4>
+        <ul>
+          <li>Master of Engineering (MEng), Embedded System Technology · Anna University · Aug 2014 – Jun 2016</li>
+        </ul>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="reveal">
+    <header class="sec-head">
+      <p class="cmd"><span class="ps1">abhiram@portfolio:~$</span> cat ~/contact.txt</p>
+      <h2>Let's talk</h2>
+    </header>
+    <div class="contact">
+      <a class="btn primary" href="https://github.com/korothabhiram" target="_blank" rel="noopener"><svg class="gh"><use href="#gh"/></svg> GitHub</a>
+      <a class="btn" href="mailto:abhiram1289@gmail.com">abhiram1289@gmail.com</a>
+      <a class="btn" href="https://www.linkedin.com/in/abhiram-koroth" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <p>Plain HTML &amp; CSS · <a href="https://www.nerdfonts.com/" target="_blank" rel="noopener">Hack Nerd Font</a> · hosted on GitHub Pages · <a href="https://github.com/korothabhiram/Portfolio" target="_blank" rel="noopener">source <svg class="gh"><use href="#gh"/></svg></a></p>
+</footer>
+
+<script src="js/main.js"></script>
+<script src="js/terminal.js"></script>
+</body>
+</html>
