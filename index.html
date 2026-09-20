@@ -103,7 +103,7 @@
     <header class="sec-head">
       <p class="cmd"><span class="ps1">abhiram@portfolio:~$</span> ls ~/projects</p>
       <h2>Things I've built</h2>
-      <p class="sub">One small app, deployed three ways: on my own machine, on a single AWS server, and as a full production-style setup.</p>
+      <p class="sub">One small app, deployed four ways: on my own machine, on a single AWS server, as a full production-style setup, and again as containers on AWS ECS.</p>
     </header>
 
     <div class="proj-grid">
@@ -118,6 +118,15 @@
   → Web servers (nginx) → Internal load balancer
   → App servers (Apache + PHP) → MySQL database</pre>
         <ul class="meta"><li>Terraform</li><li>AWS</li><li>Ansible</li><li>Highly available</li><li>No open SSH</li></ul>
+      </article>
+
+      <article class="proj">
+        <div class="tech-top">
+          <h3>crud-app-ecs-three-tier</h3>
+          <a class="gh-link" href="https://github.com/korothabhiram/Terraform/tree/main/crud-app-ecs-three-tier" target="_blank" rel="noopener" aria-label="crud-app-ecs-three-tier on GitHub" title="View on GitHub"><svg class="gh"><use href="#gh"/></svg></a>
+        </div>
+        <p>The same three-layer setup, rebuilt on containers. The web and app layers run as Docker images from a private AWS registry on Amazon ECS, and new versions roll out gradually with automatic rollback if they fail. Database settings are injected when a container starts, so no password lives in code or in an image.</p>
+        <ul class="meta"><li>Terraform</li><li>AWS</li><li>ECS</li><li>ECR</li><li>Docker</li></ul>
       </article>
 
       <article class="proj">
